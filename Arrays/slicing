@@ -1,0 +1,14 @@
+list[start:stop:step]
+
+list = [23,45,67,81,234,567]
+list[:4] it prints from starting index to 4-1 index
+list[2:] it prints from 2nd index to last index
+
+list[::-1] for reversing the list
+
+list[:] it is also prints compleate list
+
+
+the differance between list,tuple and string slicing is,
+we can create another list by using same list bcoz lists are mutable
+but in case of tuples and strings we can create but those two are same so there is no point using the same in one application
