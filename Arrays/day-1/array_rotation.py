@@ -47,7 +47,7 @@ def leftrotatebyone(arr,n):
 if __name__ == '__main__':
     arr = [1,2,3,4,5,6]
     n = len(arr)
-    d = int(input('Enter how many digits you want rotate: '))
+    d = 5
     onebyone(arr,d,n)
     print('2nd method output ',arr)
     print()
@@ -89,10 +89,36 @@ if __name__ == '__main__':
     n = len(arr)
     leftrotate(arr,d,n)
     print('third method output is ',arr)
+    print()
+    print()
 
 
 
+# cyclicilly rotate array one by one
+# time complexity O(n)
+# space complexity O(1)
 
+def rotate(arr, n):
+    x = arr[n - 1]
+
+    for i in range(n - 1, 0, -1):
+        arr[i] = arr[i - 1];
+
+    arr[0] = x;
+
+
+# Driver function
+arr = [1, 2, 3, 4, 5]
+n = len(arr)
+print("Given array is")
+for i in range(0, n):
+    print(arr[i], end=' ')
+
+rotate(arr, n)
+
+print("\nRotated array is")
+for i in range(0, n):
+    print(arr[i], end=' ') 
 
 
 
